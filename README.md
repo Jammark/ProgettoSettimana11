@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
 
+## Dipendenze
+
+1. json-server version 0.17.3
+2. json-server-auth version 2.1.0
+3. @auth0/angular-jwt version 5.1.2
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -13,6 +19,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Start
+
+Run `npm run fullstack` to execute the application.
 
 ## Running unit tests
 
