@@ -1,0 +1,17 @@
+:host, nav{
+  display: block;
+    height: 100%;
+width: 100%;
+  }
+
+  nav{
+    background-color: grey;
+  }
+
+  a{
+    color: white;
+  }
+
+  .active{
+    --bs-navbar-active-color: fuchsia;
+  }

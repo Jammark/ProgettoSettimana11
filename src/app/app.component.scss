@@ -1,0 +1,14 @@
+div{
+  height: 100%;
+}
+
+:host{
+display: block;
+  height: 100%;
+
+}
+
+main{
+  height: 80%;
+  overflow-y: scroll;
+}
