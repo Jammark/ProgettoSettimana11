@@ -1,0 +1,12 @@
+<div class="d-flex flex-column w-100 bg-dark">
+    <div class="d-flex align-items-stretch justify-content-between p-3">
+      <img class="img-fluid h-100" [src]="imgUrl + movie?.poster_path"/>
+      <div class="d-flex flex-column flex-fill h-100 p-2 mx-2">
+        <h1 class="my-3">{{movie?.title}}</h1>
+        <p class="my-1 mb-5">{{movie?.overview}}</p>
+        <h2 class="my-2">Media voti {{movie?.vote_average}}</h2>
+        <h2 class="my-2">Totale voti {{movie?.vote_count}}</h2>
+        <h2 class="my-2">Data uscita {{movie?.release_date?.toString()}}</h2>
+      </div>
+    </div>
+</div>

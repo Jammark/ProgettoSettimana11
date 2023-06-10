@@ -6,6 +6,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { UserComponent } from './components/user/user.component';
 import { LoggedGuard } from './auth/logged.guard';
+import { MoviedetailComponent } from './components/moviedetail/moviedetail.component';
 
 const rotte: Routes = [
   {
@@ -16,7 +17,10 @@ const rotte: Routes = [
   {
       path: 'movies',
       component: MoviesComponent,
-      canActivate: [AuthGuard]
+      canActivate: [AuthGuard],
+
+
+
   },
   {
       path: 'login',
@@ -32,7 +36,14 @@ const rotte: Routes = [
       path: 'profile',
       component: UserComponent,
       canActivate: [AuthGuard]
-  }
+  },
+
+  {
+    path: 'dettaglio',
+    component: MoviedetailComponent,
+    canActivate: [AuthGuard]
+}
+
 ]
 
 @NgModule({

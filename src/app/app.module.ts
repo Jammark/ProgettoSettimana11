@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { UserComponent } from './components/user/user.component';
 import { TokenInterceptor } from './auth/token.interceptor';
 import { LoggingInterceptor } from './logging.interceptor';
+import { MoviedetailComponent } from './components/moviedetail/moviedetail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LoggingInterceptor } from './logging.interceptor';
     UserComponent,
     NavbarComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MoviedetailComponent
   ],
   imports: [
     BrowserModule,

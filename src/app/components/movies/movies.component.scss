@@ -1,0 +1,37 @@
+#top{
+  background-color: fuchsia;
+  height: 80px;
+  h1{
+    color: white;
+  }
+}
+
+.board{
+  min-height: 100%;
+}
+.card{
+  border: none;
+}
+
+.card-footer{
+  background-color: darkslategrey;
+}
+
+a{
+  width: auto;
+  img{
+    cursor: pointer;
+  }
+}
+
+img{
+  cursor: pointer;
+}
+
+:host{
+  display: block;
+    height: 100%;
+width: 100%;
+  }
+
+

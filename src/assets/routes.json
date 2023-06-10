@@ -1,0 +1,9 @@
+{
+  "/api/*" : "/$1",
+  "/movie/favourite": "/favorites",
+  "/movie/favourite/:id": "/favorites/:id",
+  "/movie/favourite?userId=:id": "/favorites?userId=:id",
+  "/movie/popular": "/movies-popular",
+  "/users": "/users",
+  "/users/:id": "/users/:id"
+}

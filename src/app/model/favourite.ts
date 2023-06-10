@@ -1,5 +1,5 @@
 export interface Favourite {
   userId:number;
   movieId:number;
-  id:number;
+  id?:number;
 }

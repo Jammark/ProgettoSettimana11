@@ -2,8 +2,18 @@ h1, h2{
   color: white;
 }
 
-a{
+.nav{
+  border-bottom: none !important;
+}
+
+.nav-item{
+  border-bottom: 2px solid fuchsia;
+  width: 20%;
+
+.nav-link{
   color: fuchsia;
+
+}
 }
 
 :host{
