@@ -167,6 +167,11 @@
       "userId": 8,
       "movieId": 632357,
       "id": 34
+    },
+    {
+      "userId": 6,
+      "movieId": 635302,
+      "id": 35
     }
   ],
   "genres": [

@@ -2,6 +2,16 @@
   display: block;
     height: 100%;
 width: 100%;
+
+#info{
+  background-color: lighten($color: rgb(33,37,41), $amount: 10);
+  border-radius: 14px;
+
+}
+
+li{
+  list-style-type: none;
+}
   }
 
   h1,p,h2,h3,span{
