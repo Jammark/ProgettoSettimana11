@@ -20,9 +20,20 @@ export class RegisterComponent implements OnInit {
         this.isLoading = true;
         console.log(form.value);
         try {
-            this.authSrv.signup(form.value).subscribe();
-            this.router.navigate(['/login']);
-            this.isLoading = false
+            this.authSrv.signup(form.value).subscribe(resp => {
+              console.table(resp);
+            }, err => {
+              if(err.error == 'Email already exists' && err.status == 400){
+                alert('Nome utente già registrato.');
+                form.reset();
+              }
+              console.error(err);
+            }, () => {
+              this.router.navigate(['/login']);
+              this.isLoading = false
+            });
+
+
         } catch (error: any) { // Cast error to any type
             console.error(error);
             if (error.status == 400) {
