@@ -8,12 +8,24 @@
         <h2 class="my-2">Media voti   &nbsp;&nbsp; {{movie.vote_average}}</h2>
         <h2 class="my-2">Totale voti   &nbsp;&nbsp;  {{movie.vote_count}}</h2>
         <h2 class="my-2" >Data uscita  &nbsp;&nbsp;  <span id="data">{{format()}}</span> </h2>
-        <ul *ngIf="generi.length > 0" class="p-0 d-flex align-items-center my-2 flex-wrap">
+        <div class="d-flex my-2">
           <h3>Genere:</h3>
+          <ng-container *ngIf="generi.length > 0 else carica">
+        <ul  class="p-0 d-flex align-items-center flex-wrap">
+
           <li *ngFor="let genere of generi; let i = index" class="mx-4">
             <span>{{i+1}}. {{genere.name}}</span>
           </li>
         </ul>
+      </ng-container>
+      <ng-template #carica >
+        <div class="d-flex justify-content-center flex-fill my-4">
+        <div class="spinner-grow text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      </ng-template>
+      </div>
       </div>
     </div>
   </ng-container>

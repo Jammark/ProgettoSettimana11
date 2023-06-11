@@ -43,6 +43,13 @@
       "nome": "utente2",
       "cognome": "secondo utente",
       "id": 7
+    },
+    {
+      "email": "utente3@mail.com",
+      "password": "$2a$10$CWLgJIR6EBK2QFEBhL67C..e.cztEWkAlmOWmecaudXdbRCSEz9VW",
+      "nome": "utente3",
+      "cognome": "test3",
+      "id": 8
     }
   ],
   "favorites": [
@@ -150,6 +157,16 @@
       "userId": 7,
       "movieId": 567189,
       "id": 32
+    },
+    {
+      "userId": 8,
+      "movieId": 578701,
+      "id": 33
+    },
+    {
+      "userId": 8,
+      "movieId": 632357,
+      "id": 34
     }
   ],
   "genres": [
