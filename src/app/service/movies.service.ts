@@ -6,6 +6,7 @@ import { environment } from 'src/environments/environment';
 import { Favourite } from '../model/favourite';
 import { AuthService } from '../auth/auth.service';
 import { BehaviorSubject } from 'rxjs';
+import { Genere } from '../model/genere';
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +29,10 @@ export class MoviesService {
   getFavorites():Observable<Favourite[]>{
     let userId = this.userId ? this.userId : -1;
     return this.http.get<Favourite[]>(`${environment.baseURL}movie/favourite?userId=${userId}`)
+  }
+
+  getGeneri():Observable<Genere[]>{
+    return this.http.get<Genere[]>(`${environment.baseURL}genres`);
   }
 
   addFavourite(item: Movie):Observable<boolean>{

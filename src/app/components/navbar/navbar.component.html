@@ -2,7 +2,7 @@
     <div class="container-fluid h-100">
 
 
-        <div class="h-100 d-flex flex-column justify-content-between" id="navbarNav">
+        <div class="h-100 d-flex flex-column justify-content-between align-items-center pb-4" id="navbarNav">
             <ul class="navbar-nav d-flex flex-column align-items-stretch">
               <!--
                 <li class="nav-item">
@@ -26,7 +26,7 @@
                 -->
             </ul>
 
-            <button type="button" class="btn btn-danger ms-2 float-end" *ngIf="user" (click)="logout()">Logout</button>
+            <button type="button" class="btn btn-outline-danger ms-2 float-end bg-light" *ngIf="user" (click)="logout()">Esci</button>
         </div>
     </div>
 </nav>

@@ -11,6 +11,7 @@ import { User } from 'src/app/model/user.interface';
 })
 export class UserComponent {
 
+
   user?: User | null;
 
   constructor(private srv: UserService) {}
