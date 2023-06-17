@@ -1,29 +1,49 @@
 <div id="main" class="container-fluid bg-dark ">
   <div class="row h-100 gy-4">
     <div class="col-12 px-0">
-  <ul class="nav nav-tabs bg-dark  h-100">
+  <ul class="nav nav-tabs bg-dark ">
     <li class="nav-item">
       <a class="nav-link bg-dark w-100 text-center" href="">Info utente</a>
     </li>
     </ul>
   </div>
-  <div class="col-12 bg-dark h-100">
+  <ng-container *ngIf="user">
+  <div class="col-12 bg-dark">
 
-    <div class="d-flex justify-content-center my-5" >
-      <ng-container *ngIf="user">
+    <div class="d-flex justify-content-center mt-5 mb-2" >
+
       <div class="d-flex flex-column align-items-center">
           <h1>{{user.nome}} {{user.cognome}}</h1>
           <br>
           <h2>email: {{user.email}}</h2>
       </div>
 
-    </ng-container>
-      <ng-container *ngIf="!user">
-      <div class="spinner-grow text-light" role="status">
-        <span class="visually-hidden">Loading...</span>
+
+  </div>
+  </div>
+  <div class="col-12 d-flex justify-content-center">
+    <h1>Film preferiti</h1>
+  </div>
+  <div class="col-2"></div>
+  <div class="col mb-5">
+    <div class="container-fluid">
+      <div class="row gx-2 gy-2">
+        <div class="col-4" *ngFor="let movie of movies">
+          <div class="card rounded h-100">
+            <img class="img-fluid card-img-top h-100" [src]="imgUrl + movie.poster_path"/>
+          </div>
+        </div>
       </div>
-    </ng-container>
+    </div>
   </div>
-  </div>
+  <div class="col-2"></div>
+</ng-container>
+<ng-container *ngIf="!user">
+  <div class="col-12 d-flex justify-content-center">
+<div class="spinner-grow text-light" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div>
+</ng-container>
   </div>
 </div>

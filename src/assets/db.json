@@ -135,11 +135,6 @@
     },
     {
       "userId": 6,
-      "movieId": 578701,
-      "id": 28
-    },
-    {
-      "userId": 6,
       "movieId": 567189,
       "id": 29
     },
@@ -172,6 +167,11 @@
       "userId": 6,
       "movieId": 635302,
       "id": 35
+    },
+    {
+      "userId": 6,
+      "movieId": 573680,
+      "id": 36
     }
   ],
   "genres": [
